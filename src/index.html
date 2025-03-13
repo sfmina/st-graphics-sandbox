@@ -6,7 +6,7 @@
       <%= t.include("partials/_dataLayer.html") %>
       <link rel="preload" href="https://htlbid.com/v3/seattletimes.com/htlbid.css" as="style" />
       <link rel="preload" href="https://htlbid.com/v3/seattletimes.com/htlbid.js" as="script" />
-      <link rel='stylesheet' tvpe='text/css' href='https://htlbid.com/v3/seattletimes.com/htlbid.css' />
+      <link rel='stylesheet' type='text/css' href='https://htlbid.com/v3/seattletimes.com/htlbid.css' />
 
       <script src="https://htlbid.com/v3/seattletimes.com/htlbid.js" class="optanon-category-SN" async></script>
       <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
@@ -20,9 +20,13 @@
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_gtmNoScript.html") %>
     <% } %>
-    <div>
-      <!-- content goes here -->
-    </div>
+    
+      <!-- content goes below here -->
+
+      <!-- content goes above here -->
+     
+
+    
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
